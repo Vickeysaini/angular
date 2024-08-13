@@ -1,0 +1,49 @@
+<div class="container">
+    <form [formGroup]="billingReactiveForm" (ngSubmit)="billingSubmitForm()">
+        <h1 mat-dialog-title>Billing Rate</h1>
+        <div mat-dialog-content>
+            <div class="row align-items-center mt-2">
+                <div class="col-lg-4">
+                    <h3>Begin Date</h3>
+                </div>
+                <div class="col-lg-8">
+                    <mat-form-field appearance="outline">
+                        <mat-label>select date</mat-label>
+                        <input matInput [matDatepicker]="picker">
+                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+            <h2>Use Following Rate Option:</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <h3> <mat-radio-button value="1"></mat-radio-button> Hourly Rate</h3>
+                </div>
+                <div class="col-lg-4">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Rate</mat-label>
+                        <input matInput placeholder="Placeholder" formControlName="rate">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <h3><mat-radio-button value="1"></mat-radio-button> Use Ratesheet</h3>
+                </div>
+                <div class="col-lg-4">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Ratesheet</mat-label>
+                        <input matInput placeholder="Placeholder" formControlName="ratesheet">
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <div mat-dialog-actions>
+            <div class="cost-rate-btn">
+                <button mat-raised-button mat-dialog-close>Cancel</button>
+                <button mat-raised-button mat-dialog-close type="submit">Save & Close</button>
+            </div>
+        </div>
+    </form>
+</div>

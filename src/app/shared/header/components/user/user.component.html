@@ -1,0 +1,52 @@
+<button class="user-button" mat-mini-fab [matMenuTriggerFor]="userMenu">
+  <mat-icon class="user-button__icon">person</mat-icon>
+</button>
+<mat-menu #userMenu="matMenu" xPosition="before">
+  <div class="user-menu-title">
+    <h4 class="user-menu-title__name">{{user?.currentUser?.FirstName}}</h4>
+    <a class="user-menu-title__link">{{user?.currentUser?.Email}}</a>
+  </div>
+
+  <button mat-button  class="user-menu__item-title"  (click)="openDialog()">
+    <mat-icon class="user-menu-icon">lock</mat-icon>Change Password
+  </button>
+  
+  <button (click)="gotoPage('/profile')"  class="user-menu__item-title" mat-button>
+    <mat-icon class="user-menu-icon">person</mat-icon>Profile
+  </button>
+  <button (click)="gotoPage('/myaccount')"  class="user-menu__item-title d-flex" mat-button>
+    <mat-icon class="user-menu-icon">subscriptions</mat-icon>Subscriptions
+  </button>
+  <button (click)="gotoPage('/setting')"  class="user-menu__item-title"mat-button >
+    <mat-icon class="user-menu-icon">settings</mat-icon>Settings
+  </button>
+
+  <!-- <div class="mb-3 px-4">
+    <label for="formFile" class="form-label">Resume</label>
+    <input class="form-control mm" type="file" id="formFile">
+  </div> -->
+
+  <div class="sign-button-wrapper">
+    <button class="sign-button" mat-flat-button (click)="signOutEmit()">Sign out</button>
+  </div>
+
+
+  <!-- <div class="d-flex justify-content-between px-4 mt-3">
+    <div class="d-flex align-items-center">
+        <b>Resume: &nbsp;</b>
+        <p *ngIf="!userInfo?.Resume"><input class="form-control w-75 ms-2" type="file" (change)="onChooseResume($event)"></p>
+        <span *ngIf="userInfo?.Resume">
+            <a   href="{{userInfo?.Resume}}" download="{{userInfo?.Resume}}">
+                Download Resume
+              </a>
+              <label for="fileInput">
+                <mat-icon class="file-icon-resume ms-2">edit</mat-icon>
+                <input type="file" accept="application/pdf" id="fileInput" class="d-none" (change)="onChooseResume($event)">
+            </label>
+        </span>
+    </div>
+</div> -->
+
+  
+  
+</mat-menu>

@@ -1,0 +1,102 @@
+table {
+    width: 100%;
+  }
+
+.AccountList {
+    margin-top: 20px;
+    font-size: 31px;
+    font-weight: 500;
+    color: #525252;
+}
+
+.button-div {
+    margin-top: 20px;
+    margin-left: 17rem;
+    width: 6rem;
+    border-radius: 7px;
+    height: 36px;
+    border: none;
+    background: #68b020;
+}
+
+.button-div button {
+    background: #68b020;
+    border: none;
+    color: white;
+}
+
+mat-icon {
+    color: antiquewhite;
+}
+
+.button-2 {
+    border-radius: 9px;
+    height: 42px;
+    width: 135px;
+    border: none;
+    background: #68b020;
+    color: white;
+}
+
+.btn-primary {
+    /* margin-left: 13rem; */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.button-div-two {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.button-div-two button {
+    border: none;
+    background: #d5d5d5;
+    height: 40px;
+    width: 7rem;
+    border-radius: 6px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.search-bar-1 {
+    height: 4rem;
+    border-radius: 31px;
+    width: 25rem;
+    background-image: linear-gradient(rgb(129, 96, 221), rgb(86, 67, 129));
+    background-position:center;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 44.3rem;
+  }
+  .search-bar {
+    border-radius: 31px;
+    width: 25rem;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    border-color: rgba(129, 96, 221);
+  }
+  .search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #cccc;
+  }
+  ::placeholder {
+    color: whitesmoke;
+  }
+  .search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  

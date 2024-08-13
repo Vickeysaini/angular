@@ -1,0 +1,8 @@
+.continue{
+    gap: 26px;
+}
+
+.continue input{
+    width: 18rem;
+    border: 1px solid #9b9b9b;
+}

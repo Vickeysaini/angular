@@ -1,0 +1,87 @@
+table {
+    width: 100%;
+  }
+
+.List {
+    font-size: 31px;
+    font-weight: 500;
+    color: #525252;
+    position: relative;
+    top: 7px;
+}
+
+.Account {
+    background-color: #EEF2F5;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+}
+
+.rule {
+    background-color: #EEF2F5;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.button-nav button {
+    background-color: #b80000;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase; 
+}
+
+.button-nav button:hover {
+    box-shadow: 0 0 10px #b80000;
+    border-color: #b80000;
+    background-color: #b80000;
+    color: white;
+    text-shadow: 0 0 1px black;
+}
+
+mat-icon {
+    color: #fff;
+    position: relative;
+    right: 6px;
+}
+
+
+
+.mat-flat-btn button {
+    margin-right: 1rem;
+    background-color: #dcdcdb;;
+    color: black;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.mat-flat-btn button:hover {
+    background-color: red;
+    color: white; 
+}
+
+
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+    padding:  8px !important;
+}
+
+::ng-deep .mat-form-field-label-wrapper {
+    position: absolute !important;
+    top: -17px !important;
+}
+
+::ng-deep .mat-form-field-wrapper {
+    padding-bottom: 0em !important;
+}
+
+
+
+
+  
+
+
+
+
+

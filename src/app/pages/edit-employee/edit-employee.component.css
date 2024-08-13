@@ -1,0 +1,175 @@
+.edit-employee-btn {
+    gap: 30px;
+}
+
+.edit-employee-btn .btn-one {
+    font-size: 17px;
+    color: #68C53E;
+}
+
+.edit-employee-btn .btn-two {
+    background: #b80000;
+    color: white;
+    font-size: 17px;
+}
+
+.employee-name-input {
+    display: flex;
+    gap: 10px;
+    margin-top: 2em;
+}
+
+.employee-name-input mat-icon {
+    position: relative;
+    top: 12px;
+    color: #bfbfbf;
+}
+
+.mat-tab-group {
+    margin-bottom: 48px;
+}
+
+.btn-two {
+    background: #b80000;
+    color: white;
+    font-size: 17px;
+}
+
+.general-div h3 {
+    color: #7a7a7a;
+}
+
+.approver {
+    display: flex;
+    gap: 40px;
+    align-items: baseline;
+}
+
+.approver select {
+    width: 12rem;
+}
+
+.reimberse {
+    display: flex;
+    gap: 40px;
+    align-items: baseline;
+}
+
+.reimberse select {
+    width: 12rem;
+}
+
+.minimum {
+    display: flex;
+    gap: 40px;
+    align-items: baseline;
+}
+
+.minimum input {
+    width: 12rem;
+}
+
+.Class {
+    display: flex;
+    gap: 40px;
+    align-items: baseline;
+}
+
+.Class select {
+    width: 12rem;
+}
+
+.sync-add-div {
+    background: #e1e1e1;
+    padding: 1em 0;
+    position: sticky;
+    z-index: 1000;
+    top: 0px;
+}
+
+.left-list {
+    position: sticky;
+    top: 50px;
+    height: 77vh;
+    overflow-y: auto;
+    left: 0;
+    border-right: 1px solid;
+}
+
+.begin-date {
+    background: #e3e3e3;
+}
+
+.begin-rate {
+    background: #e3e3e3;
+}
+
+.expense-buttons button {
+    border: 1px solid rgb(163, 163, 163);
+    font-size: 12px;
+}
+
+::ng-deep .mat-tab-body-content {
+    overflow: hidden !important;
+}
+
+.expense-one button {
+    border: 1px solid rgb(163, 163, 163);
+    font-size: 12px;
+    padding: 0;
+}
+
+.cost-rate p {
+    cursor: pointer;
+    color: rgb(0, 47, 255);
+}
+
+::ng-deep .select-div .mat-form-field-appearance-outline .mat-form-field-wrapper {
+    margin: 0;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+    padding: 8px !important;
+    position: relative !important;
+}
+
+::ng-deep .mat-form-field-label-wrapper {
+    position: absolute !important;
+    top: -17px !important;
+}
+
+table {
+    width: 100%;
+}
+
+.fs-5 {
+    font-size: 16px !important;
+}
+
+::ng-deep .select-div .mat-form-field-infix {
+    width: 80px !important;
+}
+
+::ng-deep .employee-date .mat-form-field-appearance-outline .mat-form-field-flex{
+    top: -3px !important;
+    width: 115px !important;
+}
+
+::ng-deep .employee-date .mat-icon-button{
+    position: absolute;
+    left: 66px;
+    top: -6px;
+}
+
+.expense button{
+    border: 1px solid #dddddd;
+    box-shadow: none !important;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-flex{
+    margin-top: -5px !important;
+}
+
+.point-class a{
+    cursor: pointer;
+}

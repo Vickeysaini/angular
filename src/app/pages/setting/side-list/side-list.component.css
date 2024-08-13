@@ -1,0 +1,55 @@
+
+::ng-deep .mat-sidenav-content {
+    overflow-x: hidden;
+}
+
+.bod {
+    border-bottom: 2px solid green;
+}
+
+h2 {
+    margin: 0;
+    font-size: 17px;
+    padding-left: 18px;
+}
+
+.preh1 {
+    font-size: 15px;
+    font-weight: 300;
+    font-family: emoji;
+}
+
+.list-Name {
+    background: rgba(227, 224, 224, 0.953);
+}
+
+mat-icon {
+    font-size: 6px;
+    position: relative;
+    top: 14px;
+    padding-left: 20px;
+}
+
+.box {
+    width: 100%;
+    height: 600px;
+}
+
+.scroll {
+    width: 100%;
+    height: 99%;
+    overflow: auto;
+}
+
+.d-flex {
+    background: rgba(227, 224, 224, 0.953);
+    margin-bottom: 2px;
+}
+
+.d-flex:hover {
+    background: white;
+    cursor: pointer;
+    transition: all ease 1s;
+}
+
+/* ====== End of menu ======= */

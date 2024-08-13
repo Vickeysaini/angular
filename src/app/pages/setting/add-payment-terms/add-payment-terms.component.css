@@ -1,0 +1,32 @@
+.info-h1 h1 {
+    background: #21070a;
+    color: white;
+    padding: 10px 20px;
+}
+
+
+.example-margin {
+    position: relative;
+    left: 2.6rem;
+}
+
+
+.btn-button button:hover {
+    background: #21070a;
+    color: white;
+}
+
+
+.example-margin-2 {
+    position: relative;
+    top: 1.2rem;
+} 
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+    padding:  8px !important;
+}
+
+::ng-deep .mat-form-field-label-wrapper {
+    position: absolute !important;
+    top: -17px !important;
+}

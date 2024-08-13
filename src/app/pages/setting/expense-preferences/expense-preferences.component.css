@@ -1,0 +1,76 @@
+.nav h1 {
+    background-color: #EEF2F5;
+    padding: 1rem;
+    width: 100%;
+}
+p {
+    padding: 10px;
+    font-size: 15px;
+}
+.Frequency-h3 h3 {
+    border-bottom: 1px solid rgb(107, 105, 105);
+}
+.checkbox {
+    position: relative;
+    top: 6px;
+  }
+  .example-margin-2 {
+    margin-bottom: 1rem;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .week-h1   {
+    display: flex;
+ }
+ .form-select {
+    margin-left: 3rem;
+    color: #999;
+    width: 70%;
+  }
+
+  .text-danger{
+    padding-top: 15px;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .tblExpPref tr td:nth-child(1) {
+    text-align: left;
+    width: 30%;
+ 
+}
+.tblExpPref tr td:nth-child(2) {
+    text-align: left;
+    width: 70%;
+    padding: 10px 10px 10px 50px;
+}
+
+input[type='text'], select {
+    padding: 6px;
+    font-size: 14px !important;
+    border-radius: 0 !important;
+    border: 1px solid #cdcdcd;
+}
+.customtime {
+    text-align: left;
+    width: 40%;
+    font-weight: 600;
+    font-size: 17px;
+}
+.default{
+    
+        text-align: left;
+        width: 40%;
+        font-weight: 600;
+        font-size: 17px;
+    }
+
+    table {
+        margin-top: 0 !important;
+    }
+    .tblTimePref tr td:nth-child(1) {
+        text-align: left;
+        padding: 10px 10px 10px 50px;
+    }
+    
+

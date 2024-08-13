@@ -1,0 +1,46 @@
+.employee-list {
+    background-color: #d3d3d361;
+    padding-top: 20px;
+}
+
+/* .employee-buttons .btn-one {
+    font-size: 17px;
+    color: #68C53E;
+}
+
+.employee-buttons .btn-two {
+    background: #b80000;
+    color: white;
+    font-size: 17px;
+} */
+
+
+
+.employee-list-input-div {
+    gap: 14px;
+}
+
+table {
+    width: 100%;
+    box-shadow: none;
+}
+
+tr.mat-header-row{
+    border-bottom: 2px solid black;
+}
+
+th.mat-header-cell{
+    color: black;
+    font-size: 15px;
+}
+
+.employee-name-input mat-icon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.employee-name-input input {
+    width: 20rem;
+    padding: 10px;
+    font-size: 16px;
+}

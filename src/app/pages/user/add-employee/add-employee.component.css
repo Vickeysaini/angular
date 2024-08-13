@@ -1,0 +1,34 @@
+ h1 {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 28px;
+} 
+
+
+ .mat-dialog-content {
+    border-bottom: 1px solid #b3b3b3;
+}
+
+.add-employee-button button {
+    border: 1px solid #c7c7c7;
+    margin-top: 10px;
+}
+.mat-form-field {
+    width: 100%;
+} 
+
+ /* :host{
+    ::ng-deep {
+        .mat-dialog-container {
+        overflow: hidden;
+    }
+    }
+}  */
+
+
+
+   
+
+
+

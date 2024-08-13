@@ -1,0 +1,159 @@
+<img mat-card-image src="../../../assets/images/awwaltech-logo.png" alt="logo" class="img">
+<!-- <button mat-raised-button color="primary" class="btn">Create New</button> -->
+<!-- <mat-list class="fontTxtColor">
+  <mat-list-item routerLink="{{routes.DASHBOARD}}" routerLinkActive="active" class="fontTxtColor">
+    <mat-icon>home</mat-icon>Dashboard
+  </mat-list-item>
+  <mat-accordion *ngIf="employeeData?.ModulePermission[0].ModuleName">
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" [expanded]="true">
+      <mat-expansion-panel-header>
+        <mat-list-item class="text-color">
+          <mat-icon>folder_shared</mat-icon>{{employeeData.ModulePermission[0].ModuleName}}
+        </mat-list-item>
+      </mat-expansion-panel-header>
+      <mat-list-item *ngFor="let items of employeeData.ModulePermission[0].Access" routerLink="{{items.Route}}" routerLinkActive="active">
+        {{items.ChildModule}}
+      </mat-list-item>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <mat-accordion *ngIf="employeeData?.ModulePermission[1]?.ModuleName">
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" [expanded]="true">
+      <mat-expansion-panel-header>
+        <mat-list-item class="text-color">
+          <mat-icon>folder_shared</mat-icon>{{employeeData.ModulePermission[1].ModuleName}}
+        </mat-list-item>
+      </mat-expansion-panel-header>
+      <mat-list-item *ngFor="let items of employeeData.ModulePermission[1].Access" routerLink="{{items.Route}}" routerLinkActive="active">
+       {{items.ChildModule}}
+      </mat-list-item>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <mat-accordion *ngIf="employeeData?.ModulePermission[2]?.ModuleName">
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" [expanded]="true">
+      <mat-expansion-panel-header class="disable_ripple">
+        <mat-list-item class="text-color">
+          <mat-icon>folder_shared</mat-icon>{{employeeData.ModulePermission[2].ModuleName}}
+        </mat-list-item>
+      </mat-expansion-panel-header>
+      <mat-list-item *ngFor="let items of employeeData.ModulePermission[2].Access" routerLink="{{items.Route}}" routerLinkActive="active">
+        {{items.ChildModule}}
+      </mat-list-item>
+    </mat-expansion-panel>
+  </mat-accordion>
+</mat-list> -->
+<mat-list>
+  <mat-list-item routerLink="{{routes.DASHBOARD}}" routerLinkActive="active" >
+    <mat-icon>home</mat-icon>Dashboard
+  </mat-list-item>
+  
+  <mat-list-item routerLink="{{routes.USER}}" routerLinkActive="active">
+    <mat-icon>event_note</mat-icon>User
+  </mat-list-item>
+  <!-- <mat-list-item routerLink="{{routes.EMPLOYER}}" routerLinkActive="active">
+    <mat-icon>badge</mat-icon>Employer
+  </mat-list-item> -->
+  <!-- <mat-list-item routerLink="{{routes.EXPENSESHEET}}" routerLinkActive="active">
+    <mat-icon>splitscreen</mat-icon>Expense Sheets
+  </mat-list-item> -->
+  <!-- <mat-list-item routerLink="{{routes.ADMINEXPENSE}}" routerLinkActive="active">
+    <mat-icon>book</mat-icon> Admin Expense
+  </mat-list-item> -->
+  <!-- <mat-list-item routerLink="{{routes.INVOICE}}" routerLinkActive="active">
+    <mat-icon>receipt</mat-icon>Invoice
+  </mat-list-item> -->
+  <!-- <mat-list-item routerLink="{{routes.BUDGET}}" routerLinkActive="active">
+    <mat-icon>calculate</mat-icon>Budget/PO
+  </mat-list-item> -->
+  <!-- <mat-list-item routerLink="{{routes.EMPLOYEES}}" routerLinkActive="active">
+    <mat-icon>badge</mat-icon>Employees
+  </mat-list-item> -->
+  <mat-list-item routerLink="{{routes.COMPANY}}" routerLinkActive="active">
+    <mat-icon>groups</mat-icon>Company
+  </mat-list-item>
+  <!-- <mat-list-item routerLink="{{routes.PROJECT}}" routerLinkActive="active">
+    <mat-icon>file_copy</mat-icon>Project
+  </mat-list-item> -->
+  <!-- <mat-list-item routerLink="{{routes.TASK}}" routerLinkActive="active">
+    <mat-icon>task</mat-icon>Task
+  </mat-list-item> -->
+  <!-- <mat-list-item routerLink="{{routes.LISTS}}" routerLinkActive="active">
+    <mat-icon>list</mat-icon>Lists
+  </mat-list-item> -->
+  <!-- <mat-list-item routerLink="{{routes.QUICKBOOKS}}" routerLinkActive="active">
+    <svg class="me-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0,0,256,256"
+      style="fill:#000000;">
+      <g fill-opacity="0.6" fill="#6e6e6e" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+        font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+        <g transform="scale(8,8)">
+          <path
+            d="M16,3c-7.16786,0 -13,5.83214 -13,13c0,7.16786 5.83214,13 13,13c7.16786,0 13,-5.83214 13,-13c0,-7.16786 -5.83214,-13 -13,-13zM16,5c6.08698,0 11,4.91302 11,11c0,6.08698 -4.91302,11 -11,11c-6.08698,0 -11,-4.91302 -11,-11c0,-6.08698 4.91302,-11 11,-11zM17,9v12h2h2c2.28746,0 4,-2.10382 4,-4.5c0,-2.39618 -1.71254,-4.5 -4,-4.5v2c1.02654,0 2,1.03018 2,2.5c0,1.46982 -0.97346,2.5 -2,2.5h-2v-10zM11,11c-2.28746,0 -4,2.10382 -4,4.5c0,2.39618 1.71254,4.5 4,4.5v-2c-1.02654,0 -2,-1.03018 -2,-2.5c0,-1.46982 0.97346,-2.5 2,-2.5h2v10h2v-12h-1h-1z">
+          </path>
+        </g>
+      </g>
+    </svg> QuickBooks
+  </mat-list-item> -->
+  <!-- <mat-list-item routerLink="{{routes.SETTING}}" routerLinkActive="active">
+    <mat-icon>settings</mat-icon>Settings
+  </mat-list-item> -->
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- <mat-list-item routerLink="{{routes.MYTIME}}" routerLinkActive="active">
+    <mat-icon>badge</mat-icon>My Times
+  </mat-list-item> -->
+  <!-- <mat-list-item routerLink="{{routes.WEEKLYHOUR}}" routerLinkActive="active">
+    <mat-icon>badge</mat-icon>Weekly Hours
+  </mat-list-item> -->
+  <!-- <mat-list-item routerLink="{{routes.EXPENSE}}" routerLinkActive="active">
+    <mat-icon>badge</mat-icon>My Expense
+  </mat-list-item> -->
+  <mat-list-item routerLink="{{routes.SUBSCRIPTION}}" routerLinkActive="active">
+    <mat-icon>subscriptions</mat-icon>Subscription
+  </mat-list-item>
+
+  <mat-list-item routerLink="{{routes.COUNTRY}}" routerLinkActive="active">
+    <mat-icon>flag_circle</mat-icon>Country
+  </mat-list-item>
+
+  <mat-list-item routerLink="{{routes.SKILLS}}" routerLinkActive="active">
+    <mat-icon>psychology_alt</mat-icon>Skills
+  </mat-list-item>
+
+  <!-- <mat-list-item routerLink="{{routes.CATEGORY}}" routerLinkActive="active">
+    <mat-icon>category</mat-icon>Category
+  </mat-list-item> -->
+ 
+
+
+</mat-list>
+
+<!-- <p class="sidebar-title">Help</p>
+
+<mat-list>
+  <a href="https://flatlogic.com/templates" target="_blank" style="text-decoration: none;">
+    <mat-list-item>
+      <mat-icon>library_books</mat-icon> Library
+    </mat-list-item>
+  </a>
+  <a href="https://flatlogic.com/forum/" target="_blank" style="text-decoration: none;">
+    <mat-list-item>
+      <mat-icon>question_answer</mat-icon> Support
+    </mat-list-item>
+  </a>
+  <a href="https://flatlogic.com/forum" target="_blank" style="text-decoration: none;">
+    <mat-list-item>
+      <mat-icon>help_outline</mat-icon> FAQ
+    </mat-list-item>
+  </a>
+</mat-list> -->

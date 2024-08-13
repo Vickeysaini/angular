@@ -1,0 +1,14 @@
+
+section {
+    overflow: hidden;
+}
+
+.nav h1 {
+    background-color: #EEF2F5;
+    padding: 1rem;
+    width: 100%;
+}
+
+.Frequency-h3 h3 { 
+    border-bottom: 1px solid rgb(107, 105, 105);
+}

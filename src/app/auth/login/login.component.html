@@ -1,0 +1,70 @@
+<div class="section">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-8">
+        <mat-card class="p-4 mat-card-box">
+          <div class="row ">
+            <div class="col-lg-6">
+              <h2 class="text-center fs-3 fw-bold text-primary">Login</h2>
+              <form class="" [formGroup]="loginForm" (submit)="handlesubmit()">
+                <mat-form-field class="d-block" appearance="outline">
+                  <mat-label>Email</mat-label>
+                  <div class="d-flex">
+                    <input [type]="email" matInput placeholder="Enter here " formControlName="Email" required />
+                    <mat-icon class="icon" matSuffix>email_box</mat-icon>
+                  </div>
+        
+                  <mat-error *ngIf="
+                        !loginForm.controls['Email'].valid &&
+                        loginForm.controls['Email'].touched
+                      ">
+                      Email must be a valid email address
+                  </mat-error>
+                </mat-form-field>
+                <mat-form-field class="d-block bolck" appearance="outline">
+                  <mat-label>User Password</mat-label>
+                  <div class="d-flex">
+                    <input [type]="password" matInput placeholder="Enter here " formControlName="Password" required />
+                    <span (click)="onClick()">
+                      <mat-icon class="icon" aria-hidden="true" *ngIf="!show">visibility</mat-icon>
+                      <mat-icon class="icon" aria-hidden="true" *ngIf="show">visibility_off</mat-icon>
+                    </span>
+                  </div>
+        
+                  <mat-error *ngIf="
+                        !loginForm.controls['Password'].valid &&
+                        loginForm.controls['Password'].touched
+                      ">
+                    Password is Required!!
+                  </mat-error>
+                </mat-form-field>
+                <div class="box d-flex justify-content-between pb-3">
+                  <div class="check d-flex">
+                    <h3 class="mx-3"></h3>
+                  </div>
+                  <div class="recovery">
+                    <span class="text-primary"> <a routerLink="/auth/forgot">Recovery Password</a></span>
+                  </div>
+                </div>
+                <div class="button text-center">
+                  <button mat-raised-button color="primary" type="submit" id="google-login-button" class="btn btn-primary">
+                    Login
+                  </button>
+                </div>
+              </form>
+              <div class="d-flex justify-content-center mt-4">
+                <span>dont have an account yet!</span><a routerLink="/auth/signup" class="mx-3">Signup</a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="image-login">
+                <img class="w-100" src="../../../assets/images/expense-info-images/image-login.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+    
+  </div>
+</div>

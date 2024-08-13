@@ -1,0 +1,65 @@
+.pro-name-input input {
+    width: 20rem;
+    padding: 8px;
+    font-size: 16px;
+  }
+  .pro-name-input mat-icon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+/* th{
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+td{
+    font-size: 13px;
+    font-weight: 400;
+} */
+.button-div-two {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+}
+.button-5 {
+    border: none;
+    background: #d5d5d5;
+    height: 40px;
+    width: 7rem;
+    border-radius: 6px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.button-5:hover {
+    background: #68b020;
+    color: white;
+}
+/* .input-div {
+    text-align: end;
+    margin-right: 1rem;
+}
+input[type=text] {
+    width: 174%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+input[type=text]:focus {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+}
+.container{
+    width: auto;
+    margin: auto;text-align: right;
+}
+.container .mat{
+    margin-right: 25px;
+} */

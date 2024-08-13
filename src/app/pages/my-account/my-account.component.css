@@ -1,0 +1,41 @@
+::ng-deep .mat-tab-labels {
+    display: flex;
+    justify-content: space-around;
+}
+::ng-deep .mat-tab-group{
+    width: 70%;
+    margin: auto;
+}
+/* ::ng-deep .mat-tab-header{
+    width: 70%;
+    margin: auto;
+} */
+/* ::ng-deep .mat-tab-body-content {
+    width: 35%;
+    margin: auto;
+} */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+p{
+   font-size: 13px; 
+   font-weight: 400;
+}
+span{
+    color: rgb(67, 67, 255);
+    margin-left: 10px;
+}
+.plan{
+    cursor: pointer;
+}
+a{
+    text-align: center;
+    text-decoration: none;
+}

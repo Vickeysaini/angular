@@ -1,0 +1,30 @@
+.List {
+    font-size: 31px;
+    font-weight: 500;
+    color: #525252;
+    position: relative;
+    top: 7px;
+}
+
+.Account {
+    background-color: #EEF2F5;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+}
+
+.form-select {
+    margin-left: 3rem;
+    color: #999;
+    width: 70%;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  ::ng-deep .mat-icon-button {
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+  }

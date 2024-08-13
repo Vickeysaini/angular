@@ -1,0 +1,62 @@
+table {
+    width: 100%;
+  }
+
+  .List {
+    font-size: 31px;
+    font-weight: 500;
+    color: #525252;
+}
+
+
+.button-nav {
+    background: #68b020;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+mat-icon {
+    color: #fff;
+    position: relative;
+    right: 6px;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+    padding:  8px !important;
+}
+
+::ng-deep .mat-form-field-label-wrapper {
+    position: absolute !important;
+    top: -17px !important;
+}
+
+ button {
+    margin-right: 1rem;
+    background: #dcdcdb;
+    color: black;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+button:hover {
+    background: #68b020;
+    color: white;
+    
+}
+
+input[type=text]{
+    width: 174%;
+  border:2px solid #aaa;
+  border-radius:4px;
+  margin:4px 0;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  transition:.3s;
+}
+
+input[type=text]:focus{
+  border-color:dodgerBlue;
+  box-shadow:0 0 8px 0 dodgerBlue;
+}

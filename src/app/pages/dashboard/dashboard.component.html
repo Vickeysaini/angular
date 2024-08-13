@@ -1,0 +1,189 @@
+<div class="container">
+    <div class="mt-3">
+        <h1>Dashboard</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-4" >
+            <mat-card class="example-card">
+                <mat-card-title class="d-flex justify-content-between">
+                    <div class="card-header-icon">
+                        <mat-icon>person</mat-icon>
+                    </div>
+                    <div class="mt-4 card-header-titles">
+                        <mat-card-title>{{dashboardData.totalUsers}}</mat-card-title>
+                        <mat-card-subtitle>Total Users</mat-card-subtitle>
+                    </div>
+                </mat-card-title>
+                <!-- <mat-card-footer
+                    class="card-footer d-flex justify-content-between ps-3 pe-3">
+                    <div class>
+                        <p>VIEW MORE</p>
+                    </div>
+                    <div class>
+                        <mat-icon>fast_forward</mat-icon>
+                    </div>
+                </mat-card-footer> -->
+            </mat-card>
+        </div>
+
+        <div class="col-md-4">
+            <mat-card class="example-card">
+                <mat-card-title class="d-flex justify-content-between">
+                    <div class="card-header-icon">
+                        <mat-icon>business</mat-icon>
+                    </div>
+                    <div class="mt-4 card-header-titles">
+                        <mat-card-title>{{dashboardData.totalEmployees}}</mat-card-title>
+                        <mat-card-subtitle>Total Employers</mat-card-subtitle>
+                    </div>
+                </mat-card-title>
+                <!-- <mat-card-footer
+                    class="card-footer d-flex justify-content-between ps-3 pe-3">
+                    <div class>
+                        <p>VIEW MORE</p>
+                    </div>
+                    <div class>
+                        <mat-icon>fast_forward</mat-icon>
+                    </div>
+                </mat-card-footer> -->
+            </mat-card>
+        </div>
+
+        <div class="col-md-4">
+            <mat-card class="example-card">
+                <mat-card-title class="d-flex justify-content-between">
+                    <div class="card-header-icon">
+                        <mat-icon> local_post_office</mat-icon>
+                    </div>
+                    <div class="mt-4 card-header-titles">
+                        <mat-card-title>{{dashboardData.totalJobPosts}}</mat-card-title>
+                        <mat-card-subtitle>Total Job Post</mat-card-subtitle>
+                    </div>
+                </mat-card-title>
+                <!-- <mat-card-footer
+                    class="card-footer d-flex justify-content-between ps-3 pe-3">
+                    <div class>
+                        <p>VIEW MORE</p>
+                    </div>
+                    <div class>
+                        <mat-icon>fast_forward</mat-icon>
+                    </div>
+                </mat-card-footer> -->
+            </mat-card>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <mat-card class="example-card">
+                <mat-card-title class="d-flex justify-content-between">
+                    <div class="card-header-icon">
+                        <mat-icon>unsubscribe</mat-icon>
+                    </div>
+                    <div class="mt-4 card-header-titles">
+                        <mat-card-title>{{dashboardData.totalSubscriptions}}</mat-card-title>
+                        <mat-card-subtitle>Total Subscribers</mat-card-subtitle>
+                    </div>
+                </mat-card-title>
+                <!-- <mat-card-footer
+                    class="card-footer d-flex justify-content-between ps-3 pe-3">
+                    <div class>
+                        <p>VIEW MORE</p>
+                    </div>
+                    <div class>
+                        <mat-icon>fast_forward</mat-icon>
+                    </div>
+                </mat-card-footer> -->
+            </mat-card>
+        </div>
+    </div>
+</div>
+<!-- <div class="container">
+    <div class="row mt-5" *ngIf="userInfo.currentUser.Permissions[0].ModulePermission[1]?.ModuleName === 'Administrator' || userInfo.currentUser.Permissions[0].ModulePermission[2]?.ModuleName === 'Reports'">
+        <div class="col-lg-3 col-md-6 col-12">
+            <mat-card>
+                <div class="user-one d-flex">
+                    <div class="user-icon">
+                        <mat-icon class="text-primary">person</mat-icon>
+                    </div>
+                    <div class="user-content">
+                        <h2>Employees</h2>
+                        <span class="text-primary fs-5">{{employee-1}}</span>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <mat-card>
+                <div class="user-one d-flex">
+                    <div class="user-icon">
+                        <mat-icon class="text-primary">group</mat-icon>
+                    </div>
+                    <div class="user-content">
+                        <h2>Projects</h2>
+                        <span class="text-primary fs-5">{{projects}}</span>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <mat-card>
+                <div class="user-one d-flex">
+                    <div class="user-icon">
+                        <mat-icon class="text-primary">business_center</mat-icon>
+                    </div>
+                    <div class="user-content">
+                        <h2>Task</h2>
+                        <span class="text-primary fs-5">{{tasks}}</span>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <mat-card>
+                <div class="user-one d-flex">
+                    <div class="user-icon">
+                        <mat-icon class="text-primary">person</mat-icon>
+                    </div>
+                    <div class="user-content">
+                        <h2>Customers</h2>
+                        <span class="text-primary fs-5">{{customers}}</span>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+
+    <div class="row mt-5" *ngIf="userInfo.currentUser.Permissions[0].ModulePermission[0]?.ModuleName === 'MyWorkSpace'">
+        <div class="col-lg-3 col-md-6 col-12">
+            <mat-card>
+                <div class="user-one d-flex">
+                    <div class="user-icon">
+                        <mat-icon class="text-primary">access_time</mat-icon>
+                    </div>
+                    <div class="user-content">
+                        <h2>Total MyTimes</h2>
+                        <span class="text-primary fs-5">{{time}} Hrs</span>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <mat-card>
+                <div class="user-one d-flex">
+                    <div class="user-icon">
+                        <mat-icon class="text-primary">flight</mat-icon>
+                    </div>
+                    <div class="user-content">
+                        <h2>Total My Expense</h2>
+                        <span class="text-primary fs-5">{{data}}</span>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+    <div class="Submitted-Hours">
+        <h2 class="mt-5">My Times</h2>
+        <awwaltech-time-chart></awwaltech-time-chart>
+    </div>
+   
+</div> -->

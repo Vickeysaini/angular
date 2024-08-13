@@ -1,0 +1,75 @@
+<div class="container">
+    <h1 mat-dialog-title>Assign Projects to Employee</h1>
+    <div class="assign-btn d-flex">
+        <button mat-raised-button color="warn">Single</button>
+        <button mat-raised-button>Multiple</button>
+    </div>
+    <mat-dialog-content>
+        <div class="select d-flex align-items-center">
+            <div class="">
+                <h4>Select Project </h4>
+            </div>
+            <div class="">
+                <mat-form-field appearance="outline">
+                    <select matNativeControl required>
+                        <option value="All Project">All Project</option>
+                        <option value="Novotec Consulting">Novotec Consulting</option>
+                        <option value="Novotec Consulting:bbb">Novotec Consulting:bbb</option>
+                        <option value="Novotec Consulting:bbb">Novotec Consulting:team</option>
+                        <option value="Novotec Consulting:bbb">Novotec Consulting:work</option>
+                        <option value="Pecific Health Care">Pecific Health Care</option>
+                        <option value="Tall Craft Inc.">Tall Craft Inc.</option>
+                        <option value="The Totem Group Inc.">The Totem Group Inc.</option>
+                    </select>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="Task">
+                    <div class="task ps-2">
+                        <h3 class="m-0">Task</h3>
+                        <h5>click on Add to assign Task</h5>
+                    </div>
+                    <div class="task-search ms-2">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Search</mat-label>
+                            <input matInput placeholder="Placeholder">
+                        </mat-form-field>
+                    </div>
+                    <div class="task-list">
+                        <ul class="p-0">
+                            <li *ngFor="let data of listData;" class="d-flex justify-content-between px-2">
+                                <p>{{data.task}}</p>
+                                <span>{{data.add}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 position-relative">
+                <div class="middle-icon">
+                    <mat-icon>arrow_forward_ios</mat-icon>
+                </div>
+            </div>
+            <div class="col-lg-5 p-0" style="border: 1px solid #ddd;">
+                <div class="Assign-Task">
+                    <div class="assign">
+                        <h3 class="m-0">Assigned Task</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <div class="new-assignbtn">
+            <div class="">
+                <button mat-button mat-dialog-close>Cancel</button>
+            </div>
+            <div class="">
+                <button mat-button mat-dialog-close>Save & Close</button>
+                <button mat-button>Save & New</button>
+            </div>
+        </div>
+    </mat-dialog-actions>
+</div>

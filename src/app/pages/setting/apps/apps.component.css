@@ -1,0 +1,32 @@
+
+
+h2 {
+    margin: 0;
+    font-size: 17px;
+    padding-left: 18px;
+}
+
+.preh1 {
+    font-size: 19px;
+    font-weight: 400;
+    font-family: emoji;
+}
+
+.list-Name {
+    background: rgba(227, 224, 224, 0.953);
+}
+
+mat-icon {
+    font-size: 6px;
+    position: relative;
+    top: 14px;
+    padding-left: 20px;
+}
+
+
+
+.d-flex {
+    background: rgba(227, 224, 224, 0.953);
+    margin-bottom: 2px;
+    padding: .3rem;
+}

@@ -1,0 +1,29 @@
+.example-form-field {
+  margin-right: 20px;
+}
+
+.cost-rate-btn {
+  display: flex;
+  gap: 25rem;
+}
+
+mat-dialog-actions {
+  border-top: 1px solid;
+}
+
+h1 {
+  background: black;
+  color: white;
+  font-size: 32px;
+  padding: 14px 20px;
+}
+
+::ng-deep .mat-form-field-infix {
+  display: flex !important;
+}
+
+::ng-deep .mat-icon-button {
+  right: 0;
+  position: absolute;
+  top: -7px;
+}

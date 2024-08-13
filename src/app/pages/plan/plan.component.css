@@ -1,0 +1,34 @@
+.main{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+.top{
+    background-color: #b80000;
+    color: white;
+    padding: 30px 100px 30px 100px;
+}
+h1 , h2 , p{
+    margin: 0px;
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0px;
+    margin: 0px;
+}
+ul li{
+    padding: 8px 0px 8px 0px;
+}
+.dark{
+    background-color: aliceblue;
+}
+::ng-deep .mat-dialog-container{
+    padding: 5px;
+}
+.plan{
+    background-color: #b80000;
+}
+.plan button{
+    margin: 5px 0px 5px 0px;
+}

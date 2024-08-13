@@ -1,0 +1,84 @@
+<div class="">
+    <div class="info-h1">
+        <h1>Payment Terms Info</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="checkbox">
+        <mat-checkbox class="example-margin">Activity</mat-checkbox>
+    </div>
+</div>
+
+
+<div class="container">
+    <form [formGroup]="addpaymentform" (submit)="Datasubmit()">
+        <div class="row mt-3">
+            <div class="col-lg-4">
+                <h2 class="text-center">Description</h2>
+            </div>
+
+            <div class="col-lg-4">
+                <mat-form-field appearance="outline">
+                    <mat-label>10</mat-label>
+                    <input matInput placeholder="Placeholder" formControlName="10">
+                   
+                </mat-form-field>
+            </div>
+
+            <div class="col-lg-4">
+            </div>
+
+            <div class="col-lg-4">
+                <h2 class="text-center">Net Due Days</h2>
+            </div>
+
+            <div class="col-lg-4">
+                <mat-form-field appearance="outline">
+                    <mat-label>1% 10 Net 30</mat-label>
+                    <input matInput placeholder="Placeholder" formControlName="1% 10 Net 30">
+                </mat-form-field>
+            </div>
+
+            <div class="col-lg-4">
+            </div>
+
+            <div class="col-lg-4">
+                <h2 class="text-center">Discount %</h2>
+            </div>
+
+            <div class="col-lg-4">
+                <mat-form-field appearance="outline">
+                    <mat-label>30</mat-label>
+                    <input matInput placeholder="Placeholder" formControlName="30">
+                </mat-form-field>
+            </div>
+
+            <div class="col-lg-4">
+            </div>
+
+            <div class="col-lg-4">
+                <h2 class="text-center">Discount Days</h2>
+            </div>
+
+            <div class="col-lg-4">
+                <mat-form-field appearance="outline">
+                    <mat-label>2</mat-label>
+                    <input matInput placeholder="Placeholder" formControlName="2">
+                </mat-form-field>
+            </div>
+
+            <div class="col-lg-4">
+            </div>
+        </div>
+
+        <!-- ===== submit button ====== -->
+        <div class="border my-2"></div>
+        <div class="d-flex justify-content-between">
+            <button mat-raised-button mat-button mat-dialog-close>Cancel</button>
+            <div class="btn-button">
+                <button class="mx-3" type="submit" mat-raised-button color="">Save & Close</button>
+                <button mat-raised-button color="">Save & New</button>
+            </div>
+        </div>
+    </form>

@@ -1,0 +1,94 @@
+<div class="container">
+    <h2 class="text-center">Edit Projects</h2>
+    <hr>
+    <form class="" [formGroup]="AddProject" (ngSubmit)="updateProject()">
+        <mat-dialog-content>
+            <div class="row">
+               
+                    <div>
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label>Project Name</mat-label>
+                            <input matInput placeholder="Enter here" formControlName="ProjectName" required />
+                            <mat-error
+                                *ngIf="!AddProject.controls['ProjectName'].valid && AddProject.controls['ProjectName'].touched">
+                                Project Name is Required!!
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+
+
+
+
+                <div class="d-flex gap-1">
+                    <div class="col-6">
+                        <mat-form-field appearance="outline" class="w-100">
+                            <mat-label>Start Date</mat-label>
+                            <input matInput [matDatepicker]="dpp" placeholder="MM/DD/YYYY" formControlName="StartDate">
+                            <mat-error
+                                *ngIf="!AddProject.controls['StartDate'].valid && AddProject.controls['StartDate'].touched">
+                                Date is Required!!
+                            </mat-error>
+                            <mat-datepicker-toggle matSuffix [for]="dpp"></mat-datepicker-toggle>
+                            <mat-datepicker #dpp></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-6">
+                        <mat-form-field appearance="outline" class="w-100">
+                            <mat-label>End Date</mat-label>
+                            <input matInput [matDatepicker]="dp" placeholder="MM/DD/YYYY" formControlName="EndDate">
+                            <mat-error
+                                *ngIf="!AddProject.controls['EndDate'].valid && AddProject.controls['EndDate'].touched">
+                                Date is Required!!
+                            </mat-error>
+                            <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+                            <mat-datepicker #dp></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+
+                </div>
+                <div class="d-flex gap-1">
+                    <div class="col-6">
+                        <mat-form-field class="d-block" appearance="outline">
+                            <mat-label>Project Estimation</mat-label>
+                            <input matInput placeholder="Enter here" formControlName="ProjectEstimation" />
+
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col-6">
+                        <mat-form-field class="d-block" appearance="outline">
+                            <mat-label>Life Time Budget</mat-label>
+                            <input matInput placeholder="Enter here" formControlName="LifeTimeBudget" />
+
+                        </mat-form-field>
+                    </div>
+                </div>
+                <mat-form-field class="status" appearance="outline">
+                    <mat-label>Customer Name</mat-label>
+                    <mat-select formControlName="CustomerId">
+                        <mat-option *ngFor="let data of client" [value]="data._id">
+                            {{data.CustomerName}}
+                        </mat-option>
+                    </mat-select>
+                    <mat-error
+                        *ngIf="!AddProject.controls['CustomerId'].valid && AddProject.controls['CustomerId'].touched">
+                        Customer is Required!!
+                    </mat-error>
+                </mat-form-field>
+
+
+                <mat-form-field class="status" appearance="outline">
+                    <mat-label>Notes</mat-label>
+                    <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="5"
+                        cdkAutosizeMaxRows="10" formControlName="Notes"></textarea>
+                </mat-form-field>
+            </div>
+        </mat-dialog-content>
+        <div class="button text-center">
+            <button mat-raised-button color="primary" type="submit" [disabled]="AddProject.invalid">Save</button>
+        </div>
+    </form>
+
+
+
+</div>

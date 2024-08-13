@@ -1,0 +1,64 @@
+<h1 mat-dialog-title class="text-center p-2" style="background-color: black; color: white;">Skill Dialog </h1>
+<div mat-dialog-content>
+
+  <div class="row ">
+    <div class="col-lg-6">
+      <mat-form-field appearance="outline" class="w-100">
+        <input matInput type="text" placeholder="First Name">
+      </mat-form-field>
+    </div>
+    <div class="col-lg-6">
+      <mat-form-field appearance="outline" class="w-100">
+        <input matInput type="text" placeholder="Last Name">
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="row ">
+    <div class="col-lg-6">
+      <mat-form-field appearance="outline" class="w-100">
+        <input matInput type="text" placeholder="Email ID">
+      </mat-form-field>
+    </div>
+    <div class="col-lg-6">
+      <mat-form-field class="w-100" appearance="outline">
+        <mat-select placeholder="Roll">
+            <mat-option value="Contractor">Contractor</mat-option>
+            <mat-option value="Full-time employee">Full-time employee</mat-option>
+            <mat-option value="Hourly employee">Hourly employee</mat-option>
+            <mat-option value="Standard">Standard</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="row ">
+    <div class="col-lg-6">
+      <mat-form-field class="w-100" appearance="outline">
+        <mat-select placeholder="Employment">
+            <mat-option value="Contractor">Contractor</mat-option>
+            <mat-option value="Full-time employee">Full-time employee</mat-option>
+            <mat-option value="Hourly employee">Hourly employee</mat-option>
+            <mat-option value="Standard">Standard</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="col-lg-6">
+      <mat-form-field appearance="outline" class="w-100">
+        <input matInput type="text" placeholder="Estimated Cost$">
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="row ">
+    <div class="col-lg-12">
+      <textarea name="" id="" cols="64" rows="5" class="pt-2 ps-2" placeholder="Notes"></textarea>
+    </div>
+  </div>
+
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button color="warn" mat-dialog-close
+    (click)="closeaddcountryuser()">Close</button>
+  <button mat-raised-button color="primary" mat-dialog-close>Save</button>
+</div>

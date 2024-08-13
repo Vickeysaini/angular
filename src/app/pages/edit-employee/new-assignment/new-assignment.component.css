@@ -1,0 +1,67 @@
+.select{
+    gap: 12px;
+}
+
+.task-list ul li{
+    border-bottom: 1px solid #959595;
+    margin: 6px 0;
+}
+
+h1{
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+.assign-btn{
+    border-bottom: 1px solid #d30000;
+    gap: 12px;
+    padding-bottom: 6px;
+}
+
+.select{
+    margin-top: 1em;
+    align-items: baseline;
+    gap: 28px;
+}
+
+.Task{
+    border: 1px solid #ddd;
+}
+
+.task{
+    background-color: #dddddd;
+}
+
+ul li p{
+    color: #959595;
+}
+
+ul li span{
+    color: #1200ff;
+    cursor: pointer;
+}
+
+.assign{
+    background-color: #dddddd;
+    padding-top: 20px;
+}
+
+.new-assignbtn{
+    display: flex;
+    gap: 40rem;
+}
+
+.middle-icon{
+    position: absolute;
+    top: 14em;
+}
+
+.middle-icon mat-icon{
+    font-size: 4em;
+    color: #b1b1b1;
+}
+
+.new-assignbtn button{
+    border: 1px solid #9d9d9d;
+}

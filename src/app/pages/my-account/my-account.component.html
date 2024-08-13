@@ -1,0 +1,38 @@
+<h2 class="mt-5 text-center">My Account</h2>
+<mat-tab-group>
+    <mat-tab label="Product Information">
+        <div class="flex mt-4">
+            <h3>You have subscribed to</h3>
+            <p> Enterprise + Invoicing <span  mat-button (click)="openDialog()" class="plan">Change Plan</span></p>
+        </div>
+        <div class="flex">
+            <h3>Subscription Status</h3>
+            <p>Trial <span>Activate</span></p>
+        </div>
+        <div class="flex">
+            <h3>Member since</h3>
+            <p> Aug, 04 2023</p>
+        </div>
+
+    </mat-tab>
+    <mat-tab label="Billing Information">
+        <div class="flex mt-4">
+            <h3>Amount due</h3>
+            <p> $0<span>Pay Now </span> (No Payment is due)</p>
+        </div>
+    </mat-tab>
+    <mat-tab label="Billing history">
+        <div class="flex mt-4">
+            <h3>View Statement</h3>
+        </div>
+        <div class="flex ">
+            <h3>View Usage</h3>
+        </div>
+    </mat-tab>
+    <mat-tab label="Change Password"> 
+        <div class="mt-3">
+                <a href="">Change Password</a>    
+        </div>
+
+    </mat-tab>
+</mat-tab-group>

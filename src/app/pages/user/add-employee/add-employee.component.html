@@ -1,0 +1,94 @@
+ <form [formGroup]="AddInfoForm" (submit)="SubmitAddInfoForm()">
+    <h1 mat-dialog-title class="text-center">Add Employee</h1>
+    <hr>
+    <div mat-dialog-content>
+        <div class="d-flex gap-1 my-2">
+            <div class="col">
+                <mat-form-field class="w-100" appearance="outline">
+                    <mat-label>First Name</mat-label>
+                    <input matInput formControlName="FirstName" required>
+                    <mat-error
+                        *ngIf="!AddInfoForm.controls['FirstName'].valid && AddInfoForm.controls['FirstName'].touched">
+                        First Name is required!
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div class="col">
+                <mat-form-field class="w-100" appearance="outline">
+                    <mat-label>Last Name</mat-label>
+                    <input matInput formControlName="LastName" required>
+                    <mat-error
+                        *ngIf="!AddInfoForm.controls['LastName'].valid && AddInfoForm.controls['LastName'].touched">
+                        Last Name is required!
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="d-flex gap-1">
+            <div class="col">
+                <mat-form-field class="w-100" appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input type="email" matInput formControlName="Email" required>
+                    <mat-error *ngIf="!AddInfoForm.controls['Email'].valid && AddInfoForm.controls['Email'].touched">
+                        Email is required!
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div class="col">
+                <mat-form-field class="w-100" appearance="outline">
+                    <mat-label>Role</mat-label>
+                    <mat-select formControlName="Role" appearance="outline">
+                        <mat-option *ngFor="let role of Roles" [value]="role.value">
+                            {{role.name}}
+                        </mat-option>
+                    </mat-select>
+                    <mat-error *ngIf="!AddInfoForm.controls['Role'].valid && AddInfoForm.controls['Role'].touched">
+                        Role is required!
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="d-flex gap-1">
+            <div class="col">
+                <mat-form-field class="w-100" appearance="outline">
+                    <mat-label>Employment</mat-label>
+                    <mat-select formControlName="Employment">
+                        <mat-option value="Contractor">Contractor</mat-option>
+                        <mat-option value="Full-time employee">Full-time employee</mat-option>
+                        <mat-option value="Hourly employee">Hourly employee</mat-option>
+                        <mat-option value="Standard">Standard</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col">
+               <mat-form-field class="w-100" appearance="outline">
+                <mat-label>Estimated Cost $</mat-label>
+                <input type="number" matInput formControlName="EstimatedCost">
+            </mat-form-field>
+            </div>
+            
+        </div>
+        <div >
+            
+        </div> 
+        <div>
+            <mat-form-field class="w-100" appearance="outline">
+                <mat-label>Notes</mat-label>
+                <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="5"
+                    cdkAutosizeMaxRows="10" formControlName="Notes"></textarea>
+            </mat-form-field>
+        </div>
+    </div>
+    <div>
+        <div class="d-flex justify-content-between add-employee-button">
+            <div class="">
+                <button mat-button mat-dialog-close>Cancel</button>
+            </div>
+            <div class="">
+                <button mat-raised-button color="primary" type="submit" [disabled]="AddInfoForm.invalid">Save & New</button>
+            </div>
+        </div>
+    </div>
+</form>
+

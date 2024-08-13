@@ -1,0 +1,14 @@
+.List {
+    font-size: 31px;
+    font-weight: 500;
+    color: #525252;
+    position: relative;
+    top: 7px;
+}
+
+.Account {
+    background-color: #EEF2F5;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+}

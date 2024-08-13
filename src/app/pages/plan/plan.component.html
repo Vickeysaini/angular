@@ -1,0 +1,81 @@
+<div class="d-flex">
+    <div class="main text-center" *ngFor="let loop of plans">
+        <div class="top">
+            <h2>{{loop.plan}}</h2>
+            <h1>{{loop.fee}}</h1>
+            <p>{{loop.heading}}</p>
+        </div>
+        <div>
+            <ul class="list">
+                <li>{{loop.list1}}</li>
+                <li>{{loop.list2}}</li>
+                <li>{{loop.list3}}</li>
+                <li>{{loop.list4}}</li>
+                <li>{{loop.list5}}</li>
+                <li>{{loop.list6}}</li>
+                <li>{{loop.list7}}</li>
+                <li>{{loop.list8}}</li>
+                <li>{{loop.list9}}</li>
+                <li class="dark">{{loop.list10}}</li>
+            </ul>
+            <div class="plan">
+                <button mat-raised-button>Select Plan</button>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="main text-center">
+        <div class="top">
+            <h2>Professional</h2>
+            <h1>$5.99</h1>
+            <p>per user/month</p>
+        </div>
+        <div>
+            <ul class="list">
+                <li>Upto 5 Users</li>
+                <li>TimeSheets</li>
+                <li>Employee Expenses
+                </li>
+                <li>QuickBooks Integration
+                </li>
+                <li>Customizable</li>
+                <li>X</li>
+                <li>X</li>
+                <li>X</li>
+                <li>Value Pricing
+                </li>
+                <li class="dark"><mat-checkbox class="example-margin">Add Invoicing $2 per user/month</mat-checkbox></li>
+            </ul>
+            <div class="plan">
+                <button mat-raised-button>Select Plan</button>
+            </div>
+        </div>
+    </div>
+    <div class="main text-center">
+        <div class="top">
+            <h2>Enterprise</h2>
+            <h1>$9.99</h1>
+            <p>per user/month</p>
+        </div>
+        <div>
+            <ul class="list">
+                <li>Unlimited Users</li>
+                <li>TimeSheets</li>
+                <li>Employee Expenses</li>
+                <li>QuickBooks Integration</li>
+                <li>Customizable</li>
+                <li>Approval Workflow
+                </li>
+                <li>Project Assignments
+                </li>
+                <li>Budgeting
+                </li>
+                <li>Value Pricing
+                </li>
+                <li class="dark"><mat-checkbox class="example-margin">Add Invoicing $2 per user/month</mat-checkbox></li>
+            </ul>
+            <div class="plan">
+                <button mat-raised-button>Select Plan</button>
+            </div>
+        </div>
+    </div> -->
+</div>

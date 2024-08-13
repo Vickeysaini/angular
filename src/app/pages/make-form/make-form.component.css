@@ -1,0 +1,36 @@
+  .mat-icon-1  {
+    position: relative;
+    bottom: 7px;
+}
+
+::ng-deep .mat-icon-button {
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+  }
+
+  .example-full-width {
+    width: 100%;
+  }
+
+.raised-button {
+    background-color: rgb(5, 104, 5);
+    color: white;
+    font-size: 16px;
+}
+
+.textarea {
+  padding-left: 5rem;
+}
+
+.input  {
+  margin-left: 42px;
+}
+
+.mt-2 {
+  position: relative;
+  right: 21px;
+}
+  
+
+ 

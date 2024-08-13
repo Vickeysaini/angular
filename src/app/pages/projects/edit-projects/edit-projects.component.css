@@ -1,0 +1,33 @@
+/* ::ng-deep .mat-form-field-infix{
+    display: flex !important;
+} */
+/* 
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix{
+    padding: 0px;
+}
+.mat-select{
+padding: 1rem !important;
+}
+.d-flex{
+    gap: 1.5px;
+}
+.status{
+    padding: 14px;
+}
+.date{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.cdk-text-field-autofill-monitored:not(:-webkit-autofill) {
+    padding: 14px 5px 14px 5px;
+} */
+/* ::ng-deep.datePicker .mat-form-field-wrapper {
+    padding-bottom: 0 !important;
+    padding-top: o !important;
+}
+
+::ng-deep .inputField .mat-form-field-wrapper {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+} */

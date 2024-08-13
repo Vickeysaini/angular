@@ -1,0 +1,163 @@
+<div class="container" style="width: 50%;">
+    <div *ngIf="!success">
+
+        <form [formGroup]="employee">
+            <div class="row">
+                <h2 class="text-center">Profile Details</h2>
+                <div class=" d-flex justify-content-between ">
+                    <div>
+                        <h4>First Name</h4>
+                    </div>
+                    <div>
+                        <span>{{employeeData.FirstName}}</span>
+                    </div>
+                </div>
+                <hr>
+                <div class=" d-flex justify-content-between ">
+                    <div>
+                        <h4>Last Name</h4>
+                    </div>
+                    <div>
+                        <span>{{employeeData.LastName}}</span>
+                    </div>
+                </div>
+                <hr>
+                <div class=" d-flex justify-content-between ">
+                    <div>
+                        <h4>Email</h4>
+                    </div>
+                    <div>
+                        <span>{{employeeData.Email}}</span>
+                    </div>
+                </div>
+                <hr>
+                <div class=" d-flex justify-content-between ">
+                    <div>
+                        <h4>Role</h4>
+                    </div>
+                    <div>
+                        <span>{{employeeData.Role}}</span>
+                    </div>
+                </div>
+                <hr>
+                <div class=" d-flex justify-content-between ">
+                    <div>
+                        <h4>EstimatedCost</h4>
+                    </div>
+                    <div>
+                        <span>{{employeeData.EstimatedCost}}</span>
+                    </div>
+                </div>
+                <hr>
+                <div class=" d-flex justify-content-between ">
+                    <div>
+                        <h4>Status</h4>
+                    </div>
+                    <div>
+                        <span>{{employeeData.Status}}</span>
+                    </div>
+                </div>
+                <hr>
+                <div class=" d-flex justify-content-between ">
+                    <div>
+                        <h4>Notes</h4>
+                    </div>
+                    <div>
+                        <span>{{employeeData.Notes}}</span>
+                    </div>
+                    <mat-icon (click)="onButtonClick()">edit</mat-icon>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div *ngIf="success">
+        <form [formGroup]="employeeForm" (submit)="updateEmployee()">
+            <h1 class="text-center">Edit Profile</h1>
+            <div class="d-flex gap-1">
+                <div class="col">
+                    <mat-form-field class="w-100" appearance="outline">
+                        <mat-label>First Name</mat-label>
+                        <input matInput formControlName="FirstName" required>
+                        <mat-error
+                            *ngIf="!employeeForm.controls['FirstName'].valid && employeeForm.controls['FirstName'].touched">
+                            First Name is required!
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col">
+                    <mat-form-field class="w-100" appearance="outline">
+                        <mat-label>Last Name</mat-label>
+                        <input matInput formControlName="LastName" required>
+                        <mat-error
+                            *ngIf="!employeeForm.controls['LastName'].valid && employeeForm.controls['LastName'].touched">
+                            Last Name is required!
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="d-flex gap-1">
+                <div class="col">
+                    <mat-form-field class="w-100" appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input type="email" matInput formControlName="Email">
+                        <mat-error
+                            *ngIf="!employeeForm.controls['Email'].valid && employeeForm.controls['Email'].touched">
+                            Email is required!
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col">
+                    <mat-form-field class="w-100" appearance="outline">
+                        <mat-label>Employee</mat-label>
+                        <mat-select formControlName="Employment">
+                            <mat-option value="Contractor">Contractor</mat-option>
+                            <mat-option value="Full-time employee">Full-time employee</mat-option>
+                            <mat-option value="Hourly employee">Hourly employee</mat-option>
+                            <mat-option value="Standard">Standard</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="d-flex gap-1">
+                <div class="col">
+                    <mat-form-field class="w-100" appearance="outline">
+                        <mat-label>Estimated Cost $</mat-label>
+                        <input type="text" matInput formControlName="EstimatedCost">
+                    </mat-form-field>
+                </div>
+                <div class="col">
+                    <mat-form-field class="w-100" appearance="outline">
+                        <mat-label>Role</mat-label>
+                        <mat-select formControlName="Role" appearance="outline" required [disabled]="true">
+                            <mat-option *ngFor="let role of Roles" [value]="role.value">
+                                {{role.name}}
+                            </mat-option>
+                        </mat-select>
+                        <mat-error
+                            *ngIf="!employeeForm.controls['Role'].valid && employeeForm.controls['Role'].touched">
+                            Role is required!
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <mat-form-field class="w-100" appearance="outline">
+                    <mat-label>Notes</mat-label>
+                    <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="5"
+                        cdkAutosizeMaxRows="10" formControlName="Notes"></textarea>
+                </mat-form-field>
+            </div>
+
+            <div>
+                <div class="d-flex justify-content-between add-employee-button">
+                    <div class="">
+                        <button mat-button type="submit" [disabled]="employeeForm.invalid" color="primary" >Save</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>

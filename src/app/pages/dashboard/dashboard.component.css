@@ -1,0 +1,69 @@
+.example-card{
+    align-items: center;
+    background-color: rgb(11, 153, 224);
+    color: white;
+}
+.card-header-icon mat-icon{
+    font-size: 6rem;
+}
+.card-header-titles {
+    text-align: end;
+}
+.card-header-titles mat-card-subtitle{
+    color: white;
+}
+.card-footer p {
+    margin: 1px 0 0px;
+}
+.card-footer{
+    background-color: rgba(16, 129, 186, 0.837);
+    padding-top: 9px;
+}
+
+
+/* .user-one{
+    align-items: center;
+    gap: 60px;
+}
+
+.user-icon mat-icon{
+    font-size: 4em;
+}
+
+.user-content h2{
+    margin: 0;
+}
+
+.Report-Details{
+    display: flex;
+    gap: 6em;
+    align-items: baseline;
+}
+
+.button-para{
+    gap: 16px;
+    margin: 20px 0;
+}
+
+.button-para button{
+    border: none;
+    padding: 10px 12px;
+    font-size: 30px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.button-para p{
+    margin: 0;
+    font-size: 17px;
+    color: #999999;
+}
+
+.report-button button{
+    background: #13bfc1;
+    border-radius: 23px;
+    border: none;
+    width: 65px;
+    height: 20px;
+    margin: 20px 0;
+} */

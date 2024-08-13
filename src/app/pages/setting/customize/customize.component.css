@@ -1,0 +1,46 @@
+.List {
+    font-size: 31px;
+    font-weight: 500;
+    color: #525252;
+    position: relative;
+    top: 7px;
+}
+
+.Account {
+    background-color: #EEF2F5;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+}
+
+.Frequency-h3 h3 {
+    border-bottom: 1px solid rgb(107, 105, 105);
+}
+
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+    padding:  8px !important;
+}
+
+::ng-deep .mat-form-field-label-wrapper {
+    position: absolute !important;
+    top: -17px !important;
+}
+
+::ng-deep .mat-form-field-wrapper {
+    padding-bottom: 0em !important;
+}
+
+.col-lg-3 {
+    margin-bottom: 7px;
+}
+
+.form-select {
+    margin-left: 3rem;
+    color: #999;
+    width: 70%;
+  }
+
+
+
+

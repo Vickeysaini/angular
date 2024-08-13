@@ -1,0 +1,67 @@
+table {
+    width: 100%;
+}
+
+.mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+td,
+th {
+    width: 2%;
+}
+
+th.mat-header-cell {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    background-color: rgb(45, 149, 142);
+}
+
+tr.mat-row:nth-child(even) {
+    background-color: rgba(70, 177, 170, 0.345);
+}
+
+.skill-name-input input {
+    width: 20rem;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.skill-name-input mat-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+
+table {
+    width: 100%;
+  }
+  .mat-cell > span.truncate-text {
+      text-overflow: ellipsis; 
+      overflow: hidden; 
+      white-space: nowrap;
+  }
+  
+  .form-field {
+    width: 100%;
+    min-height: 64px;
+  }
+  
+  .hide-not-found-msg {
+      display:none;
+  } 
+  
+  /* Hack for more air flow between elements */
+  .mat-header-cell, .mat-cell {
+    padding: 0 16px;
+  } 
+  
+  .m-5 {
+    margin: 5px !important;
+  }
+  
+  .select-all{
+    margin: 5px 17px;
+  }

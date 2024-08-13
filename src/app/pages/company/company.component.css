@@ -1,0 +1,28 @@
+/* .mat-icon-2 {
+    position: relative;
+    right: 8px;
+}
+
+.mat-icon-3 {
+    position: relative;
+}
+.w-90 {
+    width: 100%;
+} */
+ .demo-table {
+    width: 100%;
+}
+th.mat-sort-header-sorted {
+    color: black;
+}
+.customername-name-input mat-icon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.customername-name-input input {
+    width: 20rem;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}

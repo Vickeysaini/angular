@@ -1,0 +1,68 @@
+<div class="admin-expense-data-dialog">
+    <div class="modal-content">
+        <div class="modal-header border-bottom pb-2">
+            <h3 class="modal-title fs-5 mb-0" id="exampleModalLabel">Skill user</h3>
+            <button type="button" class="btn-close" mat-dialog-close></button>
+        </div>
+        <div class="modal-body py-3">
+            <mat-dialog-content class="mat-typography">
+                <div class="gap-4 d-grid ">
+                    <div class="col-auto">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-sm-4">
+                                <h4 for="inputCity" class="form-label  mb-0 ">FirstName</h4>
+                            </div>
+                            <div class="col-sm-8">
+                                <span>{{data.firstname}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="gap-4 d-grid ">
+                    <div class="col-auto">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-sm-4">
+                                <h4 for="inputCity" class="form-label  mb-0 ">LastName</h4>
+                            </div>
+                            <div class="col-sm-8">
+                                <span>{{data.lastname}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="gap-4 d-grid ">
+                    <div class="col-auto">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-sm-2">
+                                <h4 for="inputCity" class="form-label  mb-0 ">Email</h4>
+                            </div>
+                            <div class="col-sm-8">
+                                <span>{{data.email}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="gap-4 d-grid ">
+                    <div class="col-auto">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-sm-2">
+                                <h4 for="inputCity" class="form-label  mb-0 ">Designation</h4>
+                            </div>
+                            <div class="col-sm-8">
+                                <span>{{data.designation}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </mat-dialog-content>
+        </div>
+        <div class="modal-footer border-top">
+            <mat-dialog-actions align="end">
+                <button mat-button mat-dialog-close cdkFocusInitial>Close</button>
+            </mat-dialog-actions>
+        </div>
+    </div>
+</div>

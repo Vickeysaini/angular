@@ -1,0 +1,33 @@
+table {
+    width: 100%;
+}
+
+.mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+td,th {
+    width: 2%;
+}
+
+th.mat-header-cell {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    background-color: rgb(45, 149, 142);
+}
+
+tr.mat-row:nth-child(even) {
+    background-color: rgba(70, 177, 170, 0.345);
+}
+
+.subscription-name-input input {
+    width: 20rem;
+    padding: 10px;
+    font-size: 16px;
+}
+.subscription-name-input mat-icon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}

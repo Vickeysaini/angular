@@ -1,0 +1,146 @@
+<div class="container mt-5 ">
+  <div class="d-flex justify-content-between">
+   <h1>Project List</h1>
+    <button mat-raised-button color="primary" class="mat" (click)="addProject()">+ Add Projects</button>
+  </div>
+
+</div>
+
+<div class="container">
+  <div class="button-div-two">
+    <div class="input-div">
+      <div class="pro-name-input position-relative">
+        <input (keyup)="applyFilter($event)" type="text" placeholder="Enter here" #input>
+        <mat-icon>search</mat-icon>
+      </div>
+    </div>
+
+  </div>
+</div>
+<table mat-table [dataSource]="dataSource" style="width: 95%; margin: auto">
+  <!-- Name Column -->
+  <ng-container matColumnDef="CustomerId">
+    <th mat-header-cell *matHeaderCellDef>Customer Name</th>
+    <td mat-cell *matCellDef="let element"> {{element.CustomerId?.CustomerName}} </td>
+  </ng-container>
+  <hr>
+  <ng-container matColumnDef="ProjectName">
+    <th mat-header-cell *matHeaderCellDef> Projects Name </th>
+    <td mat-cell *matCellDef="let element"> {{element.ProjectName}} </td>
+  </ng-container>
+  <hr>
+  <!-- Name Column -->
+  <ng-container matColumnDef="StartDate">
+    <th mat-header-cell *matHeaderCellDef>Start Date</th>
+    <td mat-cell *matCellDef="let element"> {{element.StartDate}} </td>
+  </ng-container>
+  <hr>
+  <ng-container matColumnDef="EndDate">
+    <th mat-header-cell *matHeaderCellDef> End Date </th>
+    <td mat-cell *matCellDef="let element"> {{element.EndDate}} </td>
+  </ng-container>
+  <hr>
+  <!-- Name Column -->
+  <ng-container matColumnDef="LifeTimeBudget">
+    <th mat-header-cell *matHeaderCellDef>Life Time Budget</th>
+    <td mat-cell *matCellDef="let element"> {{element.LifeTimeBudget}} </td>
+  </ng-container>
+  <hr>
+  <ng-container matColumnDef="IsBillable">
+    <th mat-header-cell *matHeaderCellDef> Billable</th>
+    <td mat-cell *matCellDef="let element"> {{element.IsBillable}} </td>
+  </ng-container>
+  <hr>
+  <!-- Name Column -->
+  <ng-container matColumnDef="IsDeleted">
+    <th mat-header-cell *matHeaderCellDef>IsDeleted</th>
+    <td mat-cell *matCellDef="let element"> {{element.IsDeleted}} </td>
+  </ng-container>
+  <hr>
+  <ng-container matColumnDef="IselligibleTime">
+    <th mat-header-cell *matHeaderCellDef>Iselligible Time</th>
+    <td mat-cell *matCellDef="let element"> {{element.IselligibleTime}} </td>
+  </ng-container>
+  <hr>
+  <!-- Name Column -->
+  <ng-container matColumnDef="JobElligibleRp">
+    <th mat-header-cell *matHeaderCellDef>Job ElligibleRp</th>
+    <td mat-cell *matCellDef="let element"> {{element.JobElligibleRp}} </td>
+  </ng-container>
+  <hr>
+  <ng-container matColumnDef="NonAllLocatedJob">
+    <th mat-header-cell *matHeaderCellDef> Non All LocatedJob</th>
+    <td mat-cell *matCellDef="let element"> {{element.NonAllLocatedJob}} </td>
+  </ng-container>
+  <hr>
+  <!-- Name Column -->
+  <ng-container matColumnDef="SubjectToApproval">
+    <th mat-header-cell *matHeaderCellDef>Subject To Approval</th>
+    <td mat-cell *matCellDef="let element"> {{element.SubjectToApproval}} </td>
+  </ng-container>
+  <hr>
+  <ng-container matColumnDef="ListDisplay">
+    <th mat-header-cell *matHeaderCellDef> ListDisplay</th>
+    <td mat-cell *matCellDef="let element"> {{element.ListDisplay}} </td>
+  </ng-container>
+  <hr>
+  <!-- Name Column -->
+  <ng-container matColumnDef="LoadedProperties">
+    <th mat-header-cell *matHeaderCellDef>Loaded Properties</th>
+    <td mat-cell *matCellDef="let element"> {{element.LoadedProperties}} </td>
+  </ng-container>
+  <hr>
+  <ng-container matColumnDef="SecondaryBilling">
+    <th mat-header-cell *matHeaderCellDef>Secondary Billing</th>
+    <td mat-cell *matCellDef="let element"> {{element.SecondaryBilling}} </td>
+  </ng-container>
+  <hr>
+  <!-- Name Column -->
+  <ng-container matColumnDef="CompanyBilling">
+    <th mat-header-cell *matHeaderCellDef>Company Billing</th>
+    <td mat-cell *matCellDef="let element"> {{element.CompanyBilling}} </td>
+  </ng-container>
+  <hr>
+  <ng-container matColumnDef="ProjectEstimation">
+    <th mat-header-cell *matHeaderCellDef>Project Estimation</th>
+    <td mat-cell *matCellDef="let element"> {{element.ProjectEstimation}} </td>
+  </ng-container>
+  <hr>
+  <!-- Name Column -->
+  <ng-container matColumnDef="Scramble">
+    <th mat-header-cell *matHeaderCellDef>Scramble</th>
+    <td mat-cell *matCellDef="let element"> {{element.Scramble}} </td>
+  </ng-container>
+  <hr>
+  <ng-container matColumnDef="Notes">
+    <th mat-header-cell *matHeaderCellDef>Notes</th>
+    <td mat-cell *matCellDef="let element"> {{element.Notes}} </td>
+  </ng-container>
+  <hr>
+  <ng-container matColumnDef="Action">
+    <th mat-header-cell *matHeaderCellDef>Action</th>
+    <td mat-cell *matCellDef="let element" class="custom-cell-size">
+      <button mat-icon-button (click)="deleteDialog(element)">
+        <mat-icon class="showTableicon">delete</mat-icon>
+      </button>
+      <button mat-icon-button (click)="openEditDialog(element)">
+        <mat-icon class="showTableicon">edit</mat-icon>
+      </button>
+      <button mat-icon-button (click)="openDialog(element)">
+        <mat-icon class="showTableicon">remove_red_eye</mat-icon>
+      </button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  <tr class="mat-row" *matNoDataRow> 
+    <td class="mat-cell" [attr.colspan]="displayedColumns.length">
+      No data Found!!
+    </td>
+</tr>
+</table>
+
+<mat-paginator [pageSizeOptions]="[20]" showFirstLastButtons style="width: 95%; margin: auto;"
+  aria-label="Select page of periodic elements">
+</mat-paginator>

@@ -1,0 +1,51 @@
+
+section {
+    overflow: hidden;
+}
+
+.nav h1 {
+    background-color: #EEF2F5;
+    padding: 1rem;
+    width: 100%;
+}
+
+.Frequency-h3 h3 { 
+    border-bottom: 1px solid rgb(107, 105, 105);
+}
+
+.week-h1   {
+   display: flex;
+}
+
+.mat-mdc-radio-button  .mat-mdc-radio-button {
+    margin-left: 16px;
+    font-size: 15px;
+  }
+
+  .form-select {
+    margin-left: 9rem;
+  }
+
+  .checkbox {
+    position: relative;
+    top: 6px;
+  }
+
+  .holiday-list {
+    margin-bottom: 1rem;
+  }
+
+.pl-0 h2 {
+    padding-left: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+.example-margin-2 {
+  margin-bottom: 1rem;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+
+

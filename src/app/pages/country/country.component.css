@@ -1,0 +1,41 @@
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td,
+th {
+  width: 1%;
+}
+
+.country-header-button button {
+  height: 4rem;
+  border-radius: 60%;
+  font-size: 16px;
+}
+
+th.mat-header-cell {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  background-color: rgb(42, 9, 108);
+}
+
+tr.mat-row:nth-child(even) {
+  background-color: rgba(16, 46, 194, 0.345);
+}
+
+.country-name-input input{
+  width: 20rem;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.country-name-input mat-icon{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
